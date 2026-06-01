@@ -133,6 +133,7 @@ export default function Footer() {
                 type="email"
                 placeholder="Your email"
                 className="newsletter-input flex-1 text-sm"
+                data-lpignore="true"
               />
               <button
                 type="submit"

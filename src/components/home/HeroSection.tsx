@@ -1,21 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero-food.jpg"
-          alt="Austin food scene"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/40 to-cream" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/images/hero-food.jpg"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-banner.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/40 to-cream pointer-events-none" />
       </div>
 
       {/* Content */}
