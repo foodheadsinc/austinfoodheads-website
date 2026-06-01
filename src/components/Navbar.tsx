@@ -46,7 +46,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://calendar.app.google/9HmcesYXXVLBMnq47"
+              href="https://forms.clickup.com/9011221962/f/8chrnea-4191/N6GG09LFE1WOEVJWE7"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-orange text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-orange-dark transition-all hover:scale-105 shadow-md shadow-orange/20"
@@ -97,7 +97,7 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <a
-                  href="https://calendar.app.google/9HmcesYXXVLBMnq47"
+                  href="https://forms.clickup.com/9011221962/f/8chrnea-4191/N6GG09LFE1WOEVJWE7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-orange text-white px-5 py-3 rounded-full text-center font-semibold hover:bg-orange-dark transition-all"

@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h3 className="font-serif text-lg font-bold mb-3">Advertise</h3>
             <a
-              href="https://calendar.app.google/9HmcesYXXVLBMnq47"
+              href="https://forms.clickup.com/9011221962/f/8chrnea-4191/N6GG09LFE1WOEVJWE7"
               target="_blank"
               rel="noopener noreferrer"
               className="text-orange hover:text-orange/80 transition-colors font-medium"

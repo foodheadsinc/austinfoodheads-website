@@ -21,7 +21,7 @@ export default function CollaborateSection() {
                 rotation. They come to us to find where to eat next.
               </p>
               <a
-                href="https://calendar.app.google/9HmcesYXXVLBMnq47"
+                href="https://forms.clickup.com/9011221962/f/8chrnea-4191/N6GG09LFE1WOEVJWE7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-orange text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-dark transition-all hover:scale-105 shadow-lg shadow-orange/20"

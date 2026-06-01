@@ -53,7 +53,7 @@ export default function NewsletterSection() {
                   media management/consulting please grab some time with us!
                 </p>
                 <a
-                  href="https://calendar.app.google/9HmcesYXXVLBMnq47"
+                  href="https://forms.clickup.com/9011221962/f/8chrnea-4191/N6GG09LFE1WOEVJWE7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 mt-6 bg-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-dark transition-all hover:scale-105"
