@@ -17,16 +17,6 @@ const channels = [
   {
     icon: (
       <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-      </svg>
-    ),
-    title: "Newsletter",
-    description:
-      "Our newsletter is another fast-growing channel where we keep community members up to date on the latest food they should try around Austin.",
-  },
-  {
-    icon: (
-      <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
       </svg>
     ),
@@ -48,7 +38,7 @@ export default function ChannelsSection() {
           </div>
         </FadeInUp>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {channels.map((channel, i) => (
             <motion.div
               key={channel.title}

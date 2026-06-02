@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { href: "/", label: "About" },
   { href: "/#food", label: "Recs" },
-  { href: "/news", label: "News" },
   { href: "/services", label: "Services" },
 ];
 
@@ -51,7 +50,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="bg-orange text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-orange-dark transition-all hover:scale-105 shadow-md shadow-orange/20"
             >
-              Book a call
+              Setup a call
             </a>
           </div>
 
@@ -102,7 +101,7 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                   className="bg-orange text-white px-5 py-3 rounded-full text-center font-semibold hover:bg-orange-dark transition-all"
                 >
-                  Book a call
+                  Setup a call
                 </a>
               </div>
             </motion.div>

@@ -5,7 +5,6 @@ const footerLinks = {
   menu: [
     { href: "/", label: "About" },
     { href: "/", label: "Food" },
-    { href: "/news#blog", label: "News" },
     { href: "/services", label: "Advertise" },
     { href: "/terms", label: "Terms & Conditions" },
   ],
@@ -33,7 +32,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-orange hover:text-orange/80 transition-colors font-medium"
             >
-              Book A Call →
+              Setup A Call →
             </a>
           </div>
           <div>
@@ -120,36 +119,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div>
-            <h4 className="font-semibold text-sm uppercase tracking-wider text-white/50 mb-4">
-              Subscribe
-            </h4>
-            <p className="text-white/60 text-sm mb-4">
-              Join our newsletter to stay up to date on the latest in food.
-            </p>
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="newsletter-input flex-1 text-sm"
-                data-lpignore="true"
-              />
-              <button
-                type="submit"
-                className="bg-orange text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-dark transition-all"
-              >
-                Join
-              </button>
-            </form>
-            <p className="text-white/40 text-xs mt-3">
-              By subscribing you agree to our{" "}
-              <Link href="/privacy" className="underline hover:text-orange">
-                Privacy Policy
-              </Link>{" "}
-              and provide consent to receive updates from our company.
-            </p>
-          </div>
         </div>
 
         {/* Bottom bar */}

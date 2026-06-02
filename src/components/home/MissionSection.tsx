@@ -25,7 +25,7 @@ export default function MissionSection() {
               rel="noopener noreferrer"
               className="inline-flex mt-8 bg-orange text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-dark transition-all hover:scale-105 shadow-lg shadow-orange/20"
             >
-              Book A Call
+              Setup A Call
             </a>
           </FadeInUp>
         </div>

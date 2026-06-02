@@ -26,7 +26,7 @@ export default function CollaborateSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-orange text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-dark transition-all hover:scale-105 shadow-lg shadow-orange/20"
               >
-                Book A Call
+                Setup A Call
                 <svg
                   className="w-4 h-4"
                   fill="none"
