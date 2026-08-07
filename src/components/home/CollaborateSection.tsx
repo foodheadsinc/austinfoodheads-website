@@ -49,6 +49,7 @@ export default function CollaborateSection() {
                 src="/images/food-photo-3.jpg"
                 alt="Collaborate with Austin Food Heads"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>

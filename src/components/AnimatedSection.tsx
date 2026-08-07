@@ -104,7 +104,13 @@ export function ImageReveal({
       className={className}
     >
       {fill ? (
-        <Image src={src} alt={alt} fill className="object-cover" />
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
       ) : (
         <Image
           src={src}

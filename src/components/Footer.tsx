@@ -71,7 +71,7 @@ export default function Footer() {
                 alt="Austin Food Heads"
                 width={48}
                 height={48}
-                className="rounded-full"
+                className="w-12 h-12 rounded-full"
               />
               <span className="font-serif font-bold text-xl">
                 Austin Food Heads

@@ -41,6 +41,7 @@ export default function GallerySection() {
                 src={img.src}
                 alt={img.alt}
                 fill
+                sizes="(max-width: 768px) 50vw, 25vw"
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-orange/0 group-hover:bg-orange/20 transition-colors duration-300" />

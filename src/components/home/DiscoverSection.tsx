@@ -26,6 +26,7 @@ export default function DiscoverSection() {
                 src="/images/food-photo-1.jpg"
                 alt="Austin food discovery"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -39,6 +40,7 @@ export default function DiscoverSection() {
                 src="/images/food-photo-2.jpg"
                 alt="Food recommendations in Austin"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>

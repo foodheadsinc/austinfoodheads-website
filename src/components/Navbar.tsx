@@ -25,7 +25,8 @@ export default function Navbar() {
               alt="Austin Food Heads"
               width={40}
               height={40}
-              className="rounded-full transition-transform group-hover:scale-110"
+              priority
+              className="w-10 h-10 rounded-full transition-transform group-hover:scale-110"
             />
             <span className="font-serif font-bold text-lg text-dark hidden sm:block">
               Austin Food Heads

@@ -91,6 +91,7 @@ export default function ServicesContent() {
                   src="/images/services-social.webp"
                   alt="Social media management services"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -109,6 +110,7 @@ export default function ServicesContent() {
                   src="/images/services-content.webp"
                   alt="Content creation for restaurants"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -215,6 +217,7 @@ export default function ServicesContent() {
                   src="/images/services-brand.webp"
                   alt="Brand advertising with Austin Food Heads"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
