@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const footerLinks = {
   menu: [
-    { href: "/", label: "About" },
+    { href: "/#about", label: "About" },
     { href: "/", label: "Food" },
     { href: "/services", label: "Advertise" },
     { href: "/terms", label: "Terms & Conditions" },
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="font-serif text-lg font-bold mb-3">
-              VISITing ATX?
+              Visiting ATX?
             </h3>
             <a
               href="https://www.instagram.com/austinfoodheads/?hl=en"
