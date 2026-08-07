@@ -38,10 +38,10 @@ export default function Footer() {
           <div>
             <h3 className="font-serif text-lg font-bold mb-3">Email us</h3>
             <a
-              href="mailto:austinfoodheads@gmail.com"
+              href="mailto:team@foodheadsinc.com"
               className="text-orange hover:text-orange/80 transition-colors font-medium"
             >
-              austinfoodheads@gmail.com
+              team@foodheadsinc.com
             </a>
           </div>
           <div>
