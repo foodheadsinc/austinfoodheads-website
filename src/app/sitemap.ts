@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { newsletters, reviews } from "@/data/content";
+import { reviews } from "@/data/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.austinfoodheads.com";
@@ -13,13 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/llm-info`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
   ];
 
-  const newsletterPages: MetadataRoute.Sitemap = newsletters.map((nl) => ({
-    url: `${baseUrl}/news/${nl.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
   const reviewPages: MetadataRoute.Sitemap = reviews.map((r) => ({
     url: `${baseUrl}/news/${r.slug}`,
     lastModified: new Date(),
@@ -27,5 +20,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...newsletterPages, ...reviewPages];
+  return [...staticPages, ...reviewPages];
 }

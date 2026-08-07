@@ -1,10 +1,3 @@
-export interface Newsletter {
-  slug: string;
-  title: string;
-  description?: string;
-  externalUrl?: string;
-}
-
 export interface Review {
   slug: string;
   name: string;
@@ -17,35 +10,6 @@ export interface Review {
   websiteUrl?: string;
   image: string;
 }
-
-export const newsletters: Newsletter[] = [
-  {
-    slug: "march-newsletter",
-    title: "March Newsletter",
-    externalUrl:
-      "https://mailchi.mp/df082c726dd9/december-newsletter-our-thoughts-on-the-michelin-guide-holiday-events-special-discounts-259",
-  },
-  {
-    slug: "feb-newsletter",
-    title: "February Newsletter",
-  },
-  {
-    slug: "jan-newsletter",
-    title: "January Newsletter",
-    description:
-      "Healthy eats, our favorite events to kickstart the New Year & a sub special you don't want to miss!",
-  },
-  {
-    slug: "dec-newsletter",
-    title: "December Newsletter",
-    description:
-      "Our thoughts on the Michelin Guide, Holiday Events & Special Discounts!",
-  },
-  {
-    slug: "november-newsletter",
-    title: "November Newsletter",
-  },
-];
 
 export const reviews: Review[] = [
   {

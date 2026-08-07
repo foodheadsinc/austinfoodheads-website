@@ -27,7 +27,7 @@ export default function ReviewDetail({ review }: { review: Review }) {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          Back to News
+          Back to Recommendations
         </Link>
 
         <motion.div
