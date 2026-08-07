@@ -17,6 +17,7 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.austinfoodheads.com"),
   title: {
     default: "Austin Food Heads",
     template: "%s | Austin Food Heads",
