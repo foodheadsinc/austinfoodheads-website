@@ -22,7 +22,7 @@ const channels = [
     ),
     title: "TikTok",
     description:
-      "We've grown a following of 75,000+ on TikTok who tune in for bite-sized Austin food content — a prime spot for short-form video placements that get seen.",
+      "We've grown a following of 23,000+ on TikTok who tune in for bite-sized Austin food content — a prime spot for short-form video placements that get seen.",
   },
   {
     icon: (
