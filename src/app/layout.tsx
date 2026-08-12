@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     description:
       "The best things to do in Austin + best places to eat, drink & travel to.",
   },
+  verification: {
+    google: "gUjyIAaEuwKBKSCT8GE8z-e0xdKF5r9SXO_NWii7ZGw",
+  },
 };
 
 export default function RootLayout({
