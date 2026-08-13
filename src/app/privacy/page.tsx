@@ -69,7 +69,7 @@ export default function PrivacyPage() {
 
           <h2>7. Your Rights</h2>
           <p>
-            You have the right to access, modify, or delete the personal information we hold about you. You can also unsubscribe from our emails at any time by using the provided opt-out link. If you wish to exercise any of these rights, please contact us at austinfoodheads@gmail.com.
+            You have the right to access, modify, or delete the personal information we hold about you. If you wish to exercise any of these rights, please contact us at austinfoodheads@gmail.com.
           </p>
 
           <h2>8. Changes to this Privacy Policy</h2>
