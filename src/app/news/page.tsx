@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "News",
   description:
     "Restaurant reviews and food recommendations from Austin Food Heads. Discover the best places to eat in Austin, Texas.",
+  alternates: {
+    canonical: "/news",
+  },
 };
 
 export default function NewsPage() {

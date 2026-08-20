@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description: "Austin Food Heads standard terms and conditions for services, partnerships, and website usage.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsPage() {

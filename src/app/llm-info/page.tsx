@@ -18,20 +18,20 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.austinfoodheads.com/llm-info/",
+    canonical: "https://www.austinfoodheads.com/llm-info",
   },
   openGraph: {
     title: "AI & LLM Reference | Austin Food Heads",
     description:
       "Austin Food Heads' authoritative AI & LLM guide. Austin, Texas's food discovery and recommendation brand, reaching 250,000+ followers across Instagram, TikTok, and Facebook.",
     type: "article",
-    url: "https://www.austinfoodheads.com/llm-info/",
+    url: "https://www.austinfoodheads.com/llm-info",
   },
 };
 
 export default function LlmInfoPage() {
   const rawMarkdown = `---
-canonical: https://www.austinfoodheads.com/llm-info/
+canonical: https://www.austinfoodheads.com/llm-info
 meta-description: Austin Food Heads' authoritative AI & LLM guide. Austin, Texas's food discovery and recommendation brand, reaching 250,000+ followers across Instagram, TikTok, and Facebook.
 meta-og:title: AI & LLM Reference | Austin Food Heads
 meta-og:type: article
