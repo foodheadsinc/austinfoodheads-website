@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { reviews } from "@/data/content";
+import { reviews, faviconUrl } from "@/data/content";
 
 const INITIAL_COUNT = 8;
 
@@ -183,27 +183,35 @@ export default function NewsContent() {
           ) : (
             <div className="grid md:grid-cols-2 gap-8">
               {displayedReviews.map((review, i) => {
+                const logoSrc = faviconUrl(review.websiteUrl);
+
                 const cardInner = (
-                  <>
-                    <div className="relative aspect-[16/10]">
-                      <Image
-                        src={review.image}
-                        alt={review.name}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute top-4 left-4 flex gap-2">
-                        <span className="bg-orange text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <div className="flex items-center gap-5 p-6">
+                    <div className="relative w-16 h-16 shrink-0 rounded-2xl bg-white border border-dark/10 flex items-center justify-center overflow-hidden">
+                      {logoSrc ? (
+                        <Image
+                          src={logoSrc}
+                          alt={`${review.name} logo`}
+                          width={40}
+                          height={40}
+                          className="object-contain"
+                        />
+                      ) : (
+                        <span className="text-dark/30 font-serif text-2xl">
+                          {review.name.charAt(0)}
+                        </span>
+                      )}
+                    </div>
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3 className="font-serif text-xl font-bold group-hover:text-orange transition-colors">
+                          {review.name}
+                        </h3>
+                        <span className="bg-orange/10 text-orange text-xs font-semibold px-2.5 py-1 rounded-full">
                           {review.category}
                         </span>
                       </div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="font-serif text-xl font-bold group-hover:text-orange transition-colors">
-                        {review.name}
-                      </h3>
-                      <div className="flex items-center gap-4 mt-2 text-sm text-dark/50">
+                      <div className="flex items-center gap-4 mt-1 text-sm text-dark/50">
                         <span>
                           Price: <strong>{review.price}</strong>
                         </span>
@@ -211,15 +219,15 @@ export default function NewsContent() {
                           Rating: <strong>{review.rating}</strong>
                         </span>
                       </div>
-                      <p className="text-dark/60 text-sm mt-3 line-clamp-2">
+                      <p className="text-dark/60 text-sm mt-2 line-clamp-2">
                         {review.description}
                       </p>
                     </div>
-                  </>
+                  </div>
                 );
 
                 const cardClass =
-                  "group block bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1";
+                  "group block bg-cream rounded-2xl overflow-hidden hover:shadow-lg transition-all hover:-translate-y-0.5 border border-dark/5";
 
                 return (
                   <motion.div

@@ -3,9 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import type { Review } from "@/data/content";
+import { faviconUrl, type Review } from "@/data/content";
 
 export default function ReviewDetail({ review }: { review: Review }) {
+  const logoSrc = faviconUrl(review.websiteUrl);
+
   return (
     <div className="pt-28 pb-20 bg-cream min-h-screen">
       <div className="max-w-4xl mx-auto px-6">
@@ -35,28 +37,34 @@ export default function ReviewDetail({ review }: { review: Review }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {/* Hero Image */}
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[16/9] mb-10">
-            <Image
-              src={review.image}
-              alt={review.name}
-              fill
-              sizes="(max-width: 896px) 100vw, 896px"
-              className="object-cover"
-              priority
-            />
-            <div className="absolute top-6 left-6">
-              <span className="bg-orange text-white text-sm font-semibold px-4 py-2 rounded-full">
-                {review.category}
-              </span>
-            </div>
-          </div>
-
           {/* Content */}
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
-            <h1 className="font-serif text-3xl md:text-5xl font-bold mb-6">
-              {review.name}
-            </h1>
+            <div className="flex items-center gap-6 mb-8">
+              <div className="relative w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-2xl bg-cream border border-dark/10 flex items-center justify-center overflow-hidden">
+                {logoSrc ? (
+                  <Image
+                    src={logoSrc}
+                    alt={`${review.name} logo`}
+                    width={56}
+                    height={56}
+                    className="object-contain"
+                    priority
+                  />
+                ) : (
+                  <span className="text-dark/30 font-serif text-3xl">
+                    {review.name.charAt(0)}
+                  </span>
+                )}
+              </div>
+              <div>
+                <span className="bg-orange text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-2">
+                  {review.category}
+                </span>
+                <h1 className="font-serif text-3xl md:text-5xl font-bold">
+                  {review.name}
+                </h1>
+              </div>
+            </div>
 
             {/* Stats */}
             <div className="flex flex-wrap gap-6 mb-8">
