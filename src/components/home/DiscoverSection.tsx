@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FadeInUp, ScaleIn } from "@/components/AnimatedSection";
 
 export default function DiscoverSection() {
@@ -56,6 +57,12 @@ export default function DiscoverSection() {
                 food. Let us be your secret weapon when friends come to town and
                 ask where they should go!
               </p>
+              <Link
+                href="/news"
+                className="inline-flex mt-8 bg-orange text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-dark transition-all hover:scale-105 shadow-lg shadow-orange/20"
+              >
+                See All Recs
+              </Link>
             </div>
           </FadeInUp>
         </div>
