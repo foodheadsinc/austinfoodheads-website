@@ -23,6 +23,7 @@ export const reviews: Review[] = [
     rating: "4.7/5 stars",
     description:
       "This Thai Ice Cream place is absolutely fantastic. Everything is made to order with three simple ingredients: Milk. Sugar. Cream.",
+    websiteUrl: "https://frozenrollsatx.com/",
     image: "/images/food-photo-1.jpg",
   },
   {
@@ -33,6 +34,7 @@ export const reviews: Review[] = [
     price: "$",
     rating: "4.8/5 stars",
     description: "Bird Bird is a great spot for a breakfast sandwich.",
+    websiteUrl: "https://www.birdbirdbiscuit.com/",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -119,6 +121,7 @@ export const reviews: Review[] = [
     rating: "4.8/5 stars",
     description:
       "Pueblo Viejo is a beloved Austin food truck serving authentic Mexican breakfast tacos and more.",
+    websiteUrl: "https://puebloviejoaustin.com/",
     image: "/images/hero-food.jpg",
   },
   {
@@ -143,7 +146,8 @@ export const reviews: Review[] = [
 
   // --- Seed batch pulled from Austin Food Heads' own social content history (ClickUp) ---
   // Lighter directory-format entries: no full write-up yet, so no individual detail
-  // page is generated for these (see generateStaticParams in [slug]/page.tsx).
+  // page is generated for these (see generateStaticParams in [slug]/page.tsx). Each
+  // card links out to the restaurant's own website or reservations page instead.
   {
     slug: "la-barbecue",
     name: "La Barbecue",
@@ -153,6 +157,7 @@ export const reviews: Review[] = [
     rating: "4.7/5 stars",
     description:
       "Austin's other essential BBQ trailer, known for brisket and peppery, moist sausage links that give Franklin's a real run for its money.",
+    websiteUrl: "https://labarbecue.com/",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -163,7 +168,8 @@ export const reviews: Review[] = [
     price: "$$",
     rating: "4.6/5 stars",
     description:
-      "Central Texas smoked meats with a laid-back neighborhood feel, a solid pick when the Franklin's line isn't in the cards.",
+      "Not Texas-style, Uyghur-style: a small trailer near UT grilling Xinjiang-style lamb, beef, and chicken skewers over charcoal, marinated in cumin and Sichuan peppercorn.",
+    websiteUrl: "https://www.yelp.com/biz/camino-alamo-bbq-austin",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -175,6 +181,7 @@ export const reviews: Review[] = [
     rating: "4.7/5 stars",
     description:
       "Texas smoked meat meets Venezuelan flavors, brisket next to arepas and tequenos on the same tray.",
+    websiteUrl: "https://www.instagram.com/texazuelabbq/",
     image: "/images/hero-food.jpg",
   },
   {
@@ -186,17 +193,19 @@ export const reviews: Review[] = [
     rating: "4.7/5 stars",
     description:
       "An East Austin breakfast taco institution, home of the massive \"Don Juan\" taco that regulars have been ordering for decades.",
+    websiteUrl: "https://juaninamillion.com/",
     image: "/images/food-photo-1.jpg",
   },
   {
     slug: "vaqueros",
-    name: "Vaqueros",
+    name: "Vaqueros Cafe & Cantina",
     category: "Mexican",
     mealType: ["Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
     description:
-      "A modern Mexican kitchen with a solid margarita list, good for a casual group dinner that's still a step up from tacos on the go.",
+      "A modern Tex-Mex kitchen with a solid margarita list, good for a casual group dinner that's still a step up from tacos on the go.",
+    websiteUrl: "https://www.vaqueroscafe.com/tex-mex-reservations-austin",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -208,6 +217,7 @@ export const reviews: Review[] = [
     rating: "4.6/5 stars",
     description:
       "A chilaquiles specialist that turns a usually-simple dish into the whole reason to show up.",
+    websiteUrl: "https://www.loschilakillers.com/",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -219,17 +229,19 @@ export const reviews: Review[] = [
     rating: "4.5/5 stars",
     description:
       "Baja-style fish tacos and burritos, quick, casual, and reliable across its Austin locations.",
+    websiteUrl: "https://cabobobs.com/",
     image: "/images/hero-food.jpg",
   },
   {
     slug: "micas-burritos",
-    name: "Mica's Burritos",
+    name: "Mica's Burritos & Coffee",
     category: "Mexican",
     mealType: ["Breakfast", "Lunch"],
     price: "$",
     rating: "4.7/5 stars",
     description:
-      "A breakfast burrito food truck with a cult following, order ahead if you can, mornings get busy.",
+      "A breakfast burrito drive-thru with a cult following, order ahead if you can, mornings get busy.",
+    websiteUrl: "https://micasburritosandcoffee.org/",
     image: "/images/food-photo-1.jpg",
   },
   {
@@ -240,7 +252,8 @@ export const reviews: Review[] = [
     price: "$$",
     rating: "4.7/5 stars",
     description:
-      "New York-style slices done right, a solid grab-and-go option when you don't want the full Detroit-style production.",
+      "New York and Detroit-style slices out in Dripping Springs, worth the short drive from Austin proper.",
+    websiteUrl: "https://slicestreetpizza.com/",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -250,37 +263,42 @@ export const reviews: Review[] = [
     mealType: ["Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "A neighborhood pizza spot with a laid-back garage-bar feel to match the name.",
+    description:
+      "Sicilian-leaning pizza from Comedor chef Philip Speer, served inside Garage Cocktail Bar downtown.",
+    websiteUrl: "https://www.garagepizza.com/",
     image: "/images/food-photo-3.jpg",
   },
   {
     slug: "moderna-pizzeria",
-    name: "Moderna Pizzeria",
+    name: "Moderna Bar & Pizzeria",
     category: "Pizza",
-    mealType: ["Dinner"],
+    mealType: ["Lunch", "Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "Wood-fired, Neapolitan-leaning pies in a casual setting.",
+    description: "Elevated, post-Neapolitan pizza and house-made pasta with free parking, a rare Austin bonus.",
+    websiteUrl: "https://www.modernapizzeria.com/",
     image: "/images/hero-food.jpg",
   },
   {
     slug: "outlaw-pizza",
-    name: "Outlaw Pizza",
+    name: "Outlaw Pizza Co.",
     category: "Pizza",
     mealType: ["Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "A solid local pizza option worth keeping in the weeknight rotation.",
+    description: "A solid local pizza option built on a 60-year sourdough starter, worth the weeknight rotation.",
+    websiteUrl: "https://outlawpizzatx.com/",
     image: "/images/food-photo-1.jpg",
   },
   {
     slug: "ciccio-bomba",
     name: "Ciccio Bomba",
     category: "Italian",
-    mealType: ["Dinner"],
-    price: "$$$",
+    mealType: ["Breakfast", "Lunch"],
+    price: "$$",
     rating: "4.7/5 stars",
-    description: "A dressed-up Italian spot for pasta and a proper date-night dinner.",
+    description: "An Italian bakery and cafe for cornetti, daily pizzas, and a proper espresso, in Fareground downtown.",
+    websiteUrl: "https://www.cicciobomba.com/",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -290,7 +308,8 @@ export const reviews: Review[] = [
     mealType: ["Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "Comfortable, no-frills Italian classics done well.",
+    description: "Comfortable, no-frills Northern Italian classics with an award-winning wine list.",
+    websiteUrl: "https://itsitaliancucina.com/",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -302,6 +321,7 @@ export const reviews: Review[] = [
     rating: "4.9/5 stars",
     description:
       "An intimate, counter-only omakase concept, book ahead, it's one of the harder-to-get reservations in town.",
+    websiteUrl: "https://www.sushibyscratchrestaurants.com/austin",
     image: "/images/hero-food.jpg",
   },
   {
@@ -311,7 +331,8 @@ export const reviews: Review[] = [
     mealType: ["Dinner"],
     price: "$$$",
     rating: "4.7/5 stars",
-    description: "Japanese small plates and a serious sake and whiskey list for a slower dinner.",
+    description: "Japanese small plates and a serious sake and whiskey list for a slower dinner, no reservations.",
+    websiteUrl: "https://www.scratchrestaurants.com/shokuninatx",
     image: "/images/food-photo-1.jpg",
   },
   {
@@ -321,7 +342,8 @@ export const reviews: Review[] = [
     mealType: ["Lunch", "Dinner"],
     price: "$$",
     rating: "4.7/5 stars",
-    description: "A reliable sushi spot for rolls and bowls without the special-occasion price tag.",
+    description: "James Beard winner Paul Qui's handroll bar, a reliable sushi spot without the special-occasion price tag.",
+    websiteUrl: "https://kitsunori.com/",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -331,7 +353,8 @@ export const reviews: Review[] = [
     mealType: ["Dinner"],
     price: "$$",
     rating: "4.7/5 stars",
-    description: "Torched, seared-style sushi that's a fun twist if you're bored of the usual roll menu.",
+    description: "Torched, flame-seared sushi with a tech-forward, laneway delivery gimmick that's a fun twist on the usual roll menu.",
+    websiteUrl: "https://www.aburitoraus.com/",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -341,7 +364,8 @@ export const reviews: Review[] = [
     mealType: ["Dinner"],
     price: "$$$$",
     rating: "4.7/5 stars",
-    description: "A big-night-out steakhouse with the polish you'd expect from a special-occasion splurge.",
+    description: "A big-night-out steakhouse with the LA polish you'd expect from a special-occasion splurge.",
+    websiteUrl: "https://www.boasteak.com/austin-location/",
     image: "/images/hero-food.jpg",
   },
   {
@@ -352,7 +376,8 @@ export const reviews: Review[] = [
     price: "$$$",
     rating: "4.6/5 stars",
     description:
-      "A Texas-sized steakhouse from the former Longhorns quarterback, solid for a celebratory dinner.",
+      "A Texas-sized steakhouse from the former Longhorns quarterback, solid for a celebratory dinner downtown.",
+    websiteUrl: "https://vinceyoungsteakhouse.com/",
     image: "/images/food-photo-1.jpg",
   },
   {
@@ -363,6 +388,7 @@ export const reviews: Review[] = [
     price: "$$",
     rating: "4.7/5 stars",
     description: "Korean fried chicken and comfort food with a solid drink menu to match.",
+    websiteUrl: "https://www.oseyoaustin.com/visit",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -372,7 +398,8 @@ export const reviews: Review[] = [
     mealType: ["Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "Korean classics in a casual, no-fuss setting.",
+    description: "Korean plates, soju cocktails, and private karaoke rooms for a night that runs late.",
+    websiteUrl: "https://banjooatx.com/",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -382,7 +409,8 @@ export const reviews: Review[] = [
     mealType: ["Lunch", "Dinner"],
     price: "$",
     rating: "4.6/5 stars",
-    description: "Crispy, double-fried Korean fried chicken, quick service and dangerously easy to over-order.",
+    description: "Crispy, double-fried Korean fried chicken from a 700+ store global chain, quick service and dangerously easy to over-order.",
+    websiteUrl: "https://www.instagram.com/puradak_austin/",
     image: "/images/hero-food.jpg",
   },
   {
@@ -393,16 +421,18 @@ export const reviews: Review[] = [
     price: "$$",
     rating: "4.5/5 stars",
     description: "A reliable weekend brunch chain option when the wait at the local spots is too long.",
+    websiteUrl: "https://www.anotherbrokenegg.com/locations/austin-tx-frontage-road/",
     image: "/images/food-photo-1.jpg",
   },
   {
     slug: "jps-pancake-company",
     name: "JP's Pancake Company",
     category: "American",
-    mealType: ["Breakfast"],
+    mealType: ["Dessert", "Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "Pancakes are the whole point here, stacked, stuffed, and worth the sugar crash.",
+    description: "Gourmet pancakes served as dessert, stacked, stuffed, and worth the sugar crash.",
+    websiteUrl: "https://www.jpspancakecompany.com/",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -413,6 +443,7 @@ export const reviews: Review[] = [
     price: "$",
     rating: "4.6/5 stars",
     description: "Southern biscuit sandwiches, fast and satisfying before a full day out.",
+    websiteUrl: "https://www.maplestreetbiscuits.com/texas-locations",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -424,6 +455,7 @@ export const reviews: Review[] = [
     rating: "4.8/5 stars",
     description:
       "A tiny East Austin breakfast spot with an outsized reputation, expect a wait and a menu worth it.",
+    websiteUrl: "https://www.eatpaperboy.com/",
     image: "/images/hero-food.jpg",
   },
   {
@@ -433,7 +465,8 @@ export const reviews: Review[] = [
     mealType: ["Breakfast", "Brunch"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "A cozy neighborhood brunch spot, good coffee and an easy weekend pace.",
+    description: "A cozy neighborhood brunch spot from the team behind El Meson, good coffee and an easy weekend pace.",
+    websiteUrl: "https://www.facebook.com/p/Penelopes-Cafe-61578180691586/",
     image: "/images/food-photo-1.jpg",
   },
   {
@@ -443,7 +476,8 @@ export const reviews: Review[] = [
     mealType: ["Lunch", "Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "The gourmet burger chain that started in Austin, still a solid, reliable pick.",
+    description: "The gourmet burger chain that started in Austin on South Congress in 2010, still a solid, reliable pick.",
+    websiteUrl: "https://www.hopdoddy.com/locations",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -453,7 +487,8 @@ export const reviews: Review[] = [
     mealType: ["Lunch", "Dinner"],
     price: "$",
     rating: "4.6/5 stars",
-    description: "Smash burgers done right, thin, crispy-edged patties and a proper sauce game.",
+    description: "Smash burgers done right, thin, crispy-edged patties and a proper house-made sauce game.",
+    websiteUrl: "https://smashednsauced.com/",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -463,7 +498,8 @@ export const reviews: Review[] = [
     mealType: ["Lunch", "Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "Nashville hot chicken and wings for when you want spice with your comfort food.",
+    description: "Nashville hot chicken and wings, hand-breaded and tumbled twenty two times, for when you want spice with your comfort food.",
+    websiteUrl: "https://tumble22.com/locations/",
     image: "/images/hero-food.jpg",
   },
   {
@@ -473,7 +509,8 @@ export const reviews: Review[] = [
     mealType: ["Breakfast", "Drinks"],
     price: "$",
     rating: "4.5/5 stars",
-    description: "A dependable coffee stop for a morning meeting or a work-from-cafe afternoon.",
+    description: "A dependable downtown coffee stop for a morning meeting or a work-from-cafe afternoon.",
+    websiteUrl: "https://blacksheepcoffee.us/pages/locations",
     image: "/images/food-photo-1.jpg",
   },
   {
@@ -483,7 +520,8 @@ export const reviews: Review[] = [
     mealType: ["Dessert"],
     price: "$$",
     rating: "4.8/5 stars",
-    description: "French pastries and cakes worth the drive, a proper treat-yourself stop.",
+    description: "A French-style East Austin bakery worth the drive, plus reservation-only high tea Tuesday through Sunday.",
+    websiteUrl: "https://rocheli-patisserie.square.site/",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -493,7 +531,8 @@ export const reviews: Review[] = [
     mealType: ["Dessert", "Brunch"],
     price: "$",
     rating: "4.6/5 stars",
-    description: "Sweet and savory crepes made fresh to order, a fun, quick dessert stop.",
+    description: "Sweet and savory crepes made fresh to order in Round Rock, a fun, quick stop for the greater Austin area.",
+    websiteUrl: "https://thecrepelab.com/",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -503,7 +542,8 @@ export const reviews: Review[] = [
     mealType: ["Breakfast", "Drinks"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "German-style bakery by day, beer garden by night, right along the hike-and-bike trail.",
+    description: "German-style bake shop by day, beer garden by night, right along the hike-and-bike trail.",
+    websiteUrl: "https://www.easytigerusa.com/",
     image: "/images/hero-food.jpg",
   },
   {
@@ -516,16 +556,18 @@ export const reviews: Review[] = [
     description:
       "An East Austin cafe favorite that just reopened at a new East 7th St location after its old spot closed.",
     location: "1405 E 7th St, Austin, TX 78702",
+    websiteUrl: "https://www.cenoteaustin.com/home/",
     image: "/images/food-photo-1.jpg",
   },
   {
     slug: "skipjack-oyster-bar",
-    name: "SkipJack Oyster Bar",
+    name: "Skipjack Oyster",
     category: "Seafood",
-    mealType: ["Dinner"],
+    mealType: ["Dinner", "Brunch"],
     price: "$$$",
     rating: "4.6/5 stars",
-    description: "Fresh oysters and seafood in a lively bar setting.",
+    description: "Fresh oysters and coastal seafood inside The Westin downtown, with a weekend brunch too.",
+    websiteUrl: "https://www.skipjackoysteratx.com/",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -535,7 +577,8 @@ export const reviews: Review[] = [
     mealType: ["Drinks"],
     price: "$$",
     rating: "4.7/5 stars",
-    description: "A brewery and beer garden in a converted machine shop, good for a low-key hang with friends.",
+    description: "A brewery and beer hall in a converted East Austin machine shop, good for a low-key hang with friends.",
+    websiteUrl: "https://www.cmwbrewery.com/",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -545,17 +588,19 @@ export const reviews: Review[] = [
     mealType: ["Drinks"],
     price: "$$",
     rating: "4.7/5 stars",
-    description: "A local brewery with a solid rotating tap list and an easygoing taproom.",
+    description: "A cozy East Austin brew pub with award-winning house beers, house-roasted coffee, and tacos.",
+    websiteUrl: "https://lazarusbrewing.com/",
     image: "/images/hero-food.jpg",
   },
   {
     slug: "rosewood-social-club",
     name: "Rosewood Social Club",
     category: "American",
-    mealType: ["Dinner", "Drinks"],
+    mealType: ["Breakfast", "Dinner", "Drinks"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "A neighborhood bar and kitchen combo, good for drinks that turn into dinner.",
+    description: "A family-owned East Austin bar and kitchen with fire pits on the patio, good for drinks that turn into dinner.",
+    websiteUrl: "https://www.rosewoodsocialclub.com/",
     image: "/images/food-photo-1.jpg",
   },
   {
@@ -566,16 +611,18 @@ export const reviews: Review[] = [
     price: "$$",
     rating: "4.7/5 stars",
     description: "South Indian Chettinad cooking, spicier and less commonly found than typical Austin Indian spots.",
+    websiteUrl: "https://www.sangamchettinad.com/",
     image: "/images/food-photo-2.jpg",
   },
   {
     slug: "fig-and-brie",
-    name: "Fig and Brie",
+    name: "Fig & Brie",
     category: "American",
-    mealType: ["Dinner"],
-    price: "$$$",
+    mealType: ["Lunch"],
+    price: "$$",
     rating: "4.7/5 stars",
-    description: "An upscale bistro with a menu built around seasonal, shareable plates.",
+    description: "Not a sit-down restaurant, a charcuterie board company for gorgeous grazing boards and catering, order ahead.",
+    websiteUrl: "https://www.facebook.com/figandbrie/",
     image: "/images/food-photo-3.jpg",
   },
   {
@@ -585,7 +632,8 @@ export const reviews: Review[] = [
     mealType: ["Dinner", "Brunch"],
     price: "$$$",
     rating: "4.7/5 stars",
-    description: "Southern-leaning small plates and live music inside Hotel Van Zandt, dressy but not stuffy.",
+    description: "Modern Mexican with Southern influences and live music nightly, inside Hotel Van Zandt, dressy but not stuffy.",
+    websiteUrl: "https://www.hotelvanzandt.com/geraldines/",
     image: "/images/hero-food.jpg",
   },
   {
@@ -595,7 +643,8 @@ export const reviews: Review[] = [
     mealType: ["Breakfast", "Lunch", "Dinner"],
     price: "$$",
     rating: "4.5/5 stars",
-    description: "A farm-to-table all-day menu that covers breakfast through dinner in one stop.",
+    description: "A farm-to-table all-day menu that covers breakfast through dinner in one stop, seed-oil-free.",
+    websiteUrl: "https://dishsociety.com/",
     image: "/images/food-photo-1.jpg",
   },
   {
@@ -605,7 +654,8 @@ export const reviews: Review[] = [
     mealType: ["Dinner"],
     price: "$$",
     rating: "4.6/5 stars",
-    description: "A neighborhood kitchen with a rotating seasonal menu worth checking back on.",
+    description: "A walk-up window on the patio at Dainty Dillo with a small, creative menu of sandwich riffs.",
+    websiteUrl: "https://woodneck-kitchen.square.site/",
     image: "/images/food-photo-2.jpg",
   },
   {
@@ -615,7 +665,8 @@ export const reviews: Review[] = [
     mealType: ["Lunch"],
     price: "$",
     rating: "4.7/5 stars",
-    description: "A food truck turned local favorite for Jewish deli-inspired sliders and smoked meats.",
+    description: "A food truck turned local favorite for Jewish deli-inspired sliders and smoked meats, now at five Austin locations.",
+    websiteUrl: "https://jewboysliders.com/locations/",
     image: "/images/food-photo-3.jpg",
   },
 ];
