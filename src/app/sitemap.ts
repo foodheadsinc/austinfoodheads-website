@@ -13,12 +13,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/llm-info`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
   ];
 
-  const reviewPages: MetadataRoute.Sitemap = reviews.map((r) => ({
-    url: `${baseUrl}/news/${r.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
+  // Only reviews with a real write-up (`body`) have their own page.
+  const reviewPages: MetadataRoute.Sitemap = reviews
+    .filter((r) => r.body)
+    .map((r) => ({
+      url: `${baseUrl}/news/${r.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
 
   return [...staticPages, ...reviewPages];
 }
