@@ -16,12 +16,25 @@ export default function NewsContent() {
       {/* Hero */}
       <section className="py-16 bg-cream">
         <div className="max-w-4xl mx-auto px-6 text-center">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="font-serif text-3xl md:text-5xl font-bold mb-4"
+          >
+            Austin Food Recommendations
+          </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-dark/60 text-lg"
+            transition={{ delay: 0.1 }}
+            className="text-dark/60 text-lg max-w-2xl mx-auto"
           >
-            Epic bites, endless delight. Our favorite spots around Austin.
+            Epic bites, endless delight. These are the Austin spots we
+            actually recommend to friends, sourced from the same eating and
+            filming we do every week for our 250,000+ followers. Every
+            review below covers what to order, when to go, and what to know
+            before you show up, whether that&apos;s parking, wait times, or
+            reservations.
           </motion.p>
         </div>
       </section>

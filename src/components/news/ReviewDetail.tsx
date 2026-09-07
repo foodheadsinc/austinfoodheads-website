@@ -76,6 +76,16 @@ export default function ReviewDetail({ review }: { review: Review }) {
               {review.description}
             </p>
 
+            {review.body && (
+              <div className="flex flex-col gap-4 mb-8">
+                {review.body.map((paragraph, i) => (
+                  <p key={i} className="text-dark/70 leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            )}
+
             {review.hours && (
               <div className="mb-4">
                 <span className="font-semibold">Hours of Operation: </span>
