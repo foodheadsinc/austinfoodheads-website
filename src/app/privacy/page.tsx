@@ -72,7 +72,7 @@ export default function PrivacyPage() {
 
           <h2>7. Your Rights</h2>
           <p>
-            You have the right to access, modify, or delete the personal information we hold about you. If you wish to exercise any of these rights, please contact us at austinfoodheads@gmail.com.
+            You have the right to access, modify, or delete the personal information we hold about you. If you wish to exercise any of these rights, please contact us at team@foodheadsinc.com.
           </p>
 
           <h2>8. Changes to this Privacy Policy</h2>
@@ -82,7 +82,7 @@ export default function PrivacyPage() {
 
           <h2>9. Contact Us</h2>
           <p>
-            If you have any questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us at austinfoodheads@gmail.com.
+            If you have any questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us at team@foodheadsinc.com.
           </p>
 
           <p>

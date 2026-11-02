@@ -135,8 +135,8 @@ export default function TermsPage() {
           <h3>Contact</h3>
           <p>
             For further information or to report issues, email{" "}
-            <a href="mailto:austinfoodheads@gmail.com" className="text-orange hover:underline">
-              austinfoodheads@gmail.com
+            <a href="mailto:team@foodheadsinc.com" className="text-orange hover:underline">
+              team@foodheadsinc.com
             </a>
           </p>
         </div>
