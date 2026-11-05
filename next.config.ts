@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         destination: "/terms",
         permanent: true,
       },
+      {
+        source: "/news/march-newsletter",
+        destination: "/news",
+        permanent: true,
+      },
     ];
   },
 };
